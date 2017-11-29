@@ -22,7 +22,7 @@ pipeline {
                 sh 'npm test'
             }
         }
-        stage('Test') {
+        stage('Testeadoya') {
             steps {
                 echo 'Testing...'
                 sh 'npm test'
