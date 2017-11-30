@@ -19,13 +19,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'npm test'
+                
             }
         }
         stage('Testeadoya') {
             steps {
                 echo 'Testing...'
-                sh 'npm test'
+               
             }
         }
     }
