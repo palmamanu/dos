@@ -13,6 +13,7 @@ pipeline {
         sh 'npm install'
         task 'tarea1'
         pwd(tmp: true)
+        realtimeJUnit(testResults: 'resultados', allowEmptyResults: true, keepLongStdio: true)
       }
     }
     stage('Test') {
