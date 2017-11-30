@@ -20,7 +20,7 @@ pipeline {
         stage('estadoparalelo') {
           steps {
             echo 'empieza el estado'
-            ansiblePlaybook(playbook: 'apache.yml', colorized: true)
+            ansiblePlaybook colorized: true, installation: 'ansible', inventory: '', playbook: '/tmp/apache.yml', sudoUser: null
             pwd(tmp: true)
           }
         }
